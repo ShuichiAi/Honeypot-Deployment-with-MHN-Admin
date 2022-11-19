@@ -1,47 +1,23 @@
 # Honeypot Assignment
 
-**Time spent:** **X** hours spent in total
+**Time spent:** 4 hours spent in total
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
 ### MHN-Admin Deployment (Required)
 
-**Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
+I used the instructions in the document to create the instance of mhn-admin and then deployed it using GCP.
 
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
-**Summary:** Briefly in your own words, what does dionaea do?
+Dionaea is basically a trap that we have set which we later use to track how many different people/bots attack it and get additional data associated with their attack.
 
 <img src="dionaea-honeypot.gif">
 
 ### Database Backup (Required) 
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+MHN-Admin uses mySQL as its RDBMS. The information contained in the exported session.json file is the record of all the attacks and the information associated with it like the IP address, ports accessed, protocol used, etc.
 
-*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
-### Deploying Additional Honeypot(s) (Optional)
-
-#### X Honeypot
-
-**Summary:** What does this honeypot simulate and do for a security researcher?
-
-<img src="x-honeypot.gif">
-
-### Malware Capture and Identification (Optional)
-
-#### X Malware
-
-**Summary:** How did you find it? Which honeypot captured it? What does each malware do?
-
-MD5 Hash: *Run `md5sum` on the file and record the hash here.*
-
-SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
-
-<img src="x-malware.gif">
-
-## Notes
-
-Describe any challenges encountered while doing the assignment.
